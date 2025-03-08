@@ -108,6 +108,19 @@
   }
   .social_icon ion-icon{
     margin: 5px;
+    cursor: pointer;
+  }
+  .google{
+    color: red;
+  }
+  .facebook{
+    color:#1877F2;
+  }
+  .twitter{
+    color:#1da1f2;
+  }
+  .github{
+    color: black;
   }
   .signup-form {
     display: none;
