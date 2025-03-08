@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login & Signup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form_companyname">
+      <h2>Welcome</h2>
+    </div>
+    <div class="forms-container">
+
+      <!--------- Login Form ---------->
+
+      <div class="login-form">
+        <h2>Login</h2>
+        <div class="social_media">
+            <div class="social_icon">
+                <ion-icon name="logo-google"></ion-icon>
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-github"></ion-icon>
+            </div>
+        </div>
+        <form action="login.php" method="POST">
+          <div class="input-group">
+            <!-- <label for="login-email">Email:</label> -->
+            <input type="email" id="login-email" name="email" required placeholder="Email">
+          </div>
+          <div class="input-group">
+            <!-- <label for="login-password">Password:</label> -->
+            <input type="password" id="login-password" name="password" required placeholder="Password">
+          </div>
+          <p><a href="#" id="">Forget password</a></p>
+          <button type="submit" class="btn">Login</button>
+          <p>Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+        </form>
+      </div>
+
+      <!------------- Signup Form ------------->
+
+      <div class="signup-form">
+        <h2>Sign Up</h2>
+        <div class="social_media">
+            <div class="social_icon">
+                <ion-icon name="logo-google"></ion-icon>
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-github"></ion-icon>
+            </div>
+        </div>
+        <form action="signup.php" method="POST">
+          <div class="input-group">
+            <!-- <label for="signup-name">Name:</label> -->
+            <input type="text" id="signup-name" name="name" required placeholder="Name">
+          </div>
+          <div class="input-group">
+            <!-- <label for="signup-email">Email:</label> -->
+            <input type="email" id="signup-email" name="email" required placeholder="Email">
+          </div>
+          <div class="input-group">
+            <!-- <label for="signup-password">Password:</label> -->
+            <input type="password" id="signup-password" name="password" required placeholder="Password">
+          </div>
+          <button type="submit" class="btn">Sign Up</button>
+          <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
